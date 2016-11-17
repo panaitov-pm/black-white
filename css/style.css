@@ -1,0 +1,407 @@
+/*---------------------------------------
+ PLACEHOLDER
+----------------------------------------- */
+input::-moz-placeholder {
+  text-overflow: ellipsis;
+}
+
+input:-ms-input-placeholder {
+  text-overflow: ellipsis;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #c0c0c0;
+  font-style: italic;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #c0c0c0;
+  font-style: italic;
+  font-weight: 300;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #c0c0c0;
+  font-style: italic;
+  font-weight: 300;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+  color: #c0c0c0;
+  font-style: italic;
+  font-weight: 300;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+input:focus,
+button:focus,
+textarea:focus {
+  outline: 0;
+  border-color: #999;
+}
+
+/* -----------------------------------------
+ GLOBAL
+----------------------------------------- */
+html {
+  height: 100%;
+}
+
+body, html {
+  min-height: 100%;
+}
+
+body {
+  font: 400 14px/1.7 Arial, serif;
+  color: #636060;
+  background: #e3e3e1 url("../img/body-bg.jpg") 50% no-repeat;
+  background-size: cover;
+}
+
+img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+figure {
+  margin: 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0 30px;
+  height: 45px;
+  line-height: 45px;
+  border: 0;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #202020;
+  color: #FFF;
+}
+
+.btn:hover {
+  opacity: 0.5;
+}
+
+.title {
+  margin-bottom: 23px;
+  font-family: YanoneKaffeesatz;
+  font-size: 28px;
+  text-transform: capitalize;
+  color: #000;
+}
+
+/* -----------------------------------------
+ HEADER
+----------------------------------------- */
+header {
+  padding: 55px 0;
+  background-color: #f6f7f6;
+  color: #010101;
+}
+
+.social__item {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 33px;
+  font-size: 20px;
+}
+
+.social__link {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.social__link:hover {
+  opacity: 0.5;
+}
+
+.logo {
+  padding-top: 7px;
+  text-align: center;
+}
+
+.toggle {
+  text-align: right;
+}
+
+.nav-toggle {
+  display: inline-block;
+  text-align: right;
+  font-size: 21px;
+}
+
+nav {
+  display: none;
+}
+
+/* -----------------------------------------
+ WORK
+----------------------------------------- */
+.work {
+  padding: 65px 0;
+}
+
+.work__inner {
+  padding: 5px;
+  background-color: #f6f6f6;
+  margin-bottom: 34px;
+}
+
+.work__inner:hover .sliding-top {
+  top: 0;
+}
+
+.work__inner:hover .sliding-bottom {
+  bottom: 0;
+}
+
+.work__img-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.work-layout:nth-child(4n+5) {
+  clear: both;
+}
+
+.sliding-top {
+  position: absolute;
+  top: -100%;
+  padding: 17px 13px;
+  width: 100%;
+  font-size: 13px;
+  background-color: rgba(13, 13, 13, 0.45);
+  color: #FFF;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.sliding-top__content {
+  display: inline-block;
+  vertical-align: middle;
+  width: 80%;
+  line-height: 1.4;
+}
+
+.sliding-top__title {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.sliding-top__data {
+  display: inline-block;
+  vertical-align: middle;
+  width: 18%;
+  text-align: right;
+  line-height: 1.3;
+}
+
+.sliding-top__data--font {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.sliding-bottom {
+  position: absolute;
+  bottom: -100%;
+  padding: 29px 10px;
+  width: 100%;
+  background-color: #f6f6f6;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.sliding-bottom__zoom {
+  float: right;
+  width: 13px;
+  height: 22px;
+  background: url("../img/zoom.png") 50% no-repeat;
+}
+
+.sliding-bottom .heart {
+  float: left;
+  margin-right: 15px;
+  max-width: 40px;
+}
+
+.sliding-bottom .heart__icon {
+  margin-left: 7px;
+  background: url("../img/heart.png") 0 50% no-repeat;
+}
+
+.sliding-bottom .heart__value {
+  margin-left: 22px;
+}
+
+.sliding-bottom .chat {
+  float: left;
+  max-width: 40px;
+}
+
+.sliding-bottom .chat__icon {
+  background: url("../img/chat.png") 0 50% no-repeat;
+}
+
+.sliding-bottom .chat__value {
+  margin-left: 25px;
+}
+
+/* -----------------------------------------
+ ABOUT
+----------------------------------------- */
+.about {
+  margin-bottom: 65px;
+  padding: 70px 0 74px;
+  text-align: center;
+  font-size: 18px;
+  border: 1px solid #d6d6d6;
+  background-color: #FFF;
+}
+
+.about__text {
+  margin: auto;
+  width: 51%;
+  color: #000;
+}
+
+.about__btn {
+  margin-top: 45px;
+  padding: 0 20px;
+}
+
+/* -----------------------------------------
+ CONTACT
+----------------------------------------- */
+.contact-form {
+  padding: 47px 30px 50px;
+  background-color: #FFF;
+}
+
+.contact-form__subtitle {
+  margin-bottom: 25px;
+}
+
+.contact-form__form-item {
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.contact-form__field {
+  margin-right: 27px;
+  padding: 16px 27px;
+  width: 53%;
+  border: 1px solid #d6d6d6;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  background-color: #f2f2f2;
+  color: #636060;
+}
+
+.contact-form__field--size {
+  width: 100%;
+  max-width: 100%;
+  resize: none;
+}
+
+.contact-form__hint--warning {
+  color: #f2ba59;
+}
+
+.contact-form__btn {
+  padding: 0 53px;
+}
+
+.contact-layout:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.small-post {
+  padding: 47px 30px;
+  background-color: #FFF;
+}
+
+.small-post__title {
+  margin-bottom: 16px;
+}
+
+.small-post__img-box {
+  margin-bottom: 15px;
+  padding: 5px;
+  background-color: #f2f2f2;
+}
+
+.small-post__desc {
+  font-size: 20px;
+  color: #000;
+}
+
+.newsletter {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #FFF;
+}
+
+.newsletter__logo {
+  margin: 0 auto 12px;
+}
+
+.newsletter__title {
+  margin-bottom: 32px;
+}
+
+.newsletter__field {
+  margin: auto;
+  width: 69%;
+  text-align: center;
+}
+
+.newsletter__btn {
+  padding: 0 60px;
+}
+
+/* -----------------------------------------
+ FOOTER
+----------------------------------------- */
+footer {
+  padding: 55px 0;
+  background-color: #202020;
+  color: #f5f5f5;
+}
+
+.social__link--foot-color {
+  opacity: 0.5;
+}
+
+.social__link--foot-color:hover {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=c:/OpenServer/domains/beetroot.loc/lesson-22/free/map/style.css.map */
