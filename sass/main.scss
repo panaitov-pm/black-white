@@ -235,6 +235,272 @@ nav {
 	}
 }
 
+/* -----------------------------------------
+ POSTS
+----------------------------------------- */
+.posts {
+	margin-bottom: 25px;
+}
+
+.post {
+	margin-bottom: 30px;
+	padding: 47px 0 70px 26px;
+	border: 1px solid $form-bd-color;
+	background-color: $white-color;
+}
+
+.post-top {
+	margin-bottom: 15px;
+	text-transform: capitalize;
+	color: #989b9f;
+	
+	&__title {
+		display: inline-block;
+		vertical-align: top;
+		margin-bottom: 13px;
+		width: 40%;
+		font-size: 14px;
+		font-weight: normal;
+		text-transform: capitalize;
+	}
+
+	&__date {
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	&__type-time {
+		float: right;
+		padding-right: 14px;
+	}
+
+	&__bookmark {
+		margin-left: 8px;
+		
+		&:hover {
+			color: $pink-color;
+		}
+	}
+}
+
+.post-img {
+	display: inline-block;
+	vertical-align: top;
+	width: 35%;
+	font-size: 12px;
+	color: #6c6e72;
+	
+	&__inner {
+		margin-bottom: 14px;
+		border: 5px solid #f0f0f0;
+		background-color: #eaedef;
+	}
+
+	&__text {
+		padding-left: 6px;
+	}
+}
+
+.post-desc {
+	display: inline-block;
+	vertical-align: top;
+	width: 64%;
+	padding: 0 14px 0 30px;
+	color: #636060;
+	
+	&__title {
+		margin-bottom: 33px;
+		font-size: 17px;
+		line-height: 1.4;
+		color: $black-color;
+	}
+}
+
+.author {
+	padding: 35px 45px 0 0;
+	font-size: 12px;
+	text-align: center;
+	
+	&__title {
+		font-size: 20px;
+		color: $black-color;
+		line-height: 1.2;
+	}
+
+	&__subtitle {
+		color: $pink-color;
+		text-transform: capitalize;
+	}
+
+	&__img-box {
+		position: relative;
+		margin: 13px auto 0;
+		width: 46px;
+		height: 46px;
+		border-radius: 50%;
+		
+		&:hover .author__social-list{
+			right: 0;
+		}
+	}
+
+	&__social {
+		position: absolute;
+		top: 50%;
+		right: -85px;
+		padding-left: 15px;
+		font-size: 13px;
+		overflow: hidden;
+		color: $white-color;
+		transform: translateY(-50%);
+	}
+
+	&__social-list {
+		position: relative;
+		right: 130%;
+		padding-right: 6px;
+		background-color: rgba(0, 0, 0, 0.45);
+		transition: all 0.3s ease-in-out;
+		
+		&:before {
+			content: '';
+			position: absolute;
+			right: 100%;
+			top: 50%;
+			margin-top: -12px;
+			height: 0;
+			width: 0;
+			border: solid transparent;
+			pointer-events: none;
+			border-right-color: rgba(0, 0, 0, 0.45);
+			border-width: 12px;
+		}
+	}
+	
+	&__social-item {
+		display: inline-block;
+		margin-left: 9px;
+		
+		&:first-child {
+			margin-left: 4px;
+		}
+	}
+
+	&__social-link {
+		transition: all 0.2s ease-in-out;
+
+	    &:hover {
+		color: $pink-color;
+		}
+	}	
+}
+
+.author-social {
+	margin-top: 35px;
+	color: #c8c8c8;
+	font-size: 18px;
+	
+	&__list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	
+	&__item {
+		margin-top: 7px;
+	}
+
+	&__link {
+		transition: all 0.2s ease-in-out;
+
+	    &:hover {
+		color: $pink-color;
+		}
+	}
+}
+
+//--Categorys--
+.categorys {
+	margin-bottom: 30px;
+	padding: 42px 20px 30px 25px;
+	font-size: 13px;
+	line-height: 1.86;
+	border: 1px solid $form-bd-color;
+	background-color: $white-color;
+	color: $black-color;
+	
+	&__title {
+		margin-bottom: 37px;
+		font-size: 20px;
+		line-height: 1.2;
+		text-align: center;
+	}
+
+	&__list {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+
+	&__item-count {
+		color: $pink-color;
+	}
+
+	&__sublist,
+	&__thirdlist {
+		padding: 0;
+		list-style: none;
+	}
+
+	&__subitem,
+	&__thirditem {
+		padding-left: 7px;
+		
+		&::before {
+			content: '\f0da';
+			display: inline-block;
+			vertical-align: middle;
+			width: 10px;
+			margin-right: 10px;
+			font-family: 'FontAwesome';
+			font-size: 18px;
+			color: #c2c2c2;
+		}
+		
+	}
+
+	&__sublink {
+		font-style: italic;
+		line-height: 1.8;
+		text-decoration: underline;
+		color: $pink-color;
+	}
+
+
+
+	&__item {
+		
+		&--open:before,
+		&--close:before {
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 13px;
+			width: 10px;
+			font-family: 'FontAwesome';
+			font-size: 18px;
+		}
+
+		&--open:before {
+			content: '\f0d7';
+			color: $black-color;
+		}
+
+		&--close:before {
+			content: '\f0da';
+			color: #c2c2c2;
+		}
+	}
+}
 
 
 /* -----------------------------------------
@@ -334,10 +600,15 @@ nav {
 		padding: 0 60px;
 	}
 }
+
+
+
+
 /* -----------------------------------------
  FOOTER
 ----------------------------------------- */
 footer {
+	margin-top: 75px;
 	padding: 55px 0;
 	background-color: $footer-bg;
 	color: $footer-color;
